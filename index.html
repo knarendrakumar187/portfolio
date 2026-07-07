@@ -377,7 +377,9 @@ h2.section-title .hl { color: var(--amber); }
   position: absolute; top: -13px; left: 28px;
   background: var(--ink); padding: 0 10px;
   font-family: var(--mono); font-size: 11px; color: var(--amber);
-  letter-spacing: 0.1em; border: 1px solid var(--line);
+  letter-spacing: 0.1em;
+  /* CHANGED: Removed "border: 1px solid var(--line)" — this was causing
+     the unwanted rectangular box visible above each project card */
 }
 section.alt .project::before { background: var(--ink-2); }
 .project::after {
